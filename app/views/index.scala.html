@@ -1,6 +1,11 @@
-@()
+@(articleTitles: Seq[String])
 
 @main("Boro News") {
     <h1>Boro News</h1>
+    <ul>
+        @for(t <- articleTitles) {
+            <li>@t</li>
+        }
+    </ul>
     <img src="@routes.Assets.versioned("images/mfc-logo.jpg")" />
 }
