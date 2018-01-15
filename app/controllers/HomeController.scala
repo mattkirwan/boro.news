@@ -26,25 +26,17 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     val responseString: String = get("http://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss")
 
     val xml = scala.xml.XML.loadString(responseString)
-    val rss: String = xml.mkString
 
-    val articleTitles = for {
-      t <- xml \\ "item" \ "title"
-    } yield t.text
+    println(xml.getClass)
 
-    Ok(views.html.index(articleTitles))
+    val articles: Seq[Map[String, String]]= for {
+      a <- xml \\ "item"
+      t <- a \ "title"
+      l <- a \ "link"
+    } yield Map(l.text -> t.text)
+
+    Ok(views.html.index(articles))
   }
 
   def get(url: String)  = scala.io.Source.fromURL(url).mkString
 }
-
-
-
-//object MyHttp extends Http {
-//  proxyConfig = None,
-//  options = HttpConstants.defaultOptions,
-//  charset = HttpConstants.utf8,
-//  sendBufferSize = 4096,
-//  userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 Firefox/57.0",
-//  compress = true
-//}
