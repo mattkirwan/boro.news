@@ -5,7 +5,7 @@ import javax.inject._
 import play.api._
 import play.api.mvc._
 
-
+import scala.util.{Try, Success, Failure}
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -23,20 +23,24 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
    */
   def index() = Action { implicit request: Request[AnyContent] =>
 
-    val responseString: String = get("http://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss")
+    val responseString: String = scala.io.Source.fromURL("https://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss").mkString
 
-    val xml = scala.xml.XML.loadString(responseString)
+    def parseXML(xml: String): Try[scala.xml.Elem] = {
+      Try(scala.xml.XML.loadString(xml))
+    }
 
-    println(xml.getClass)
-
-    val articles: Seq[Map[String, String]]= for {
-      a <- xml \\ "item"
-      t <- a \ "title"
-      l <- a \ "link"
-    } yield Map(l.text -> t.text)
+    val articles = parseXML(responseString) match {
+      case Success(out) => for {
+        a <- out \\ "item"
+        t <- a \ "title"
+        l <- a \ "link"
+      } yield Map(l.text -> t.text)
+      case Failure(f) => Seq(Map("error" -> f.toString))
+    }
 
     Ok(views.html.index(articles))
+
   }
 
-  def get(url: String)  = scala.io.Source.fromURL(url).mkString
 }
+
