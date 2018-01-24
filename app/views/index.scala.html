@@ -1,10 +1,10 @@
-@(articles: Seq[Map[String, String]])
+@(articles: List[(String, String)])
 
 @main("Boro News") {
     <h1>Boro News</h1>
     <ul>
         @for(a <- articles) {
-            @for(i <- a) { <a href="@i._1"><li>@i._2</li></a> }
+            <a href="@a._1"><li>@a._2</li></a>
         }
     </ul>
     <img src="@routes.Assets.versioned("images/mfc-logo.jpg")" />
