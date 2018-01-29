@@ -1,11 +1,9 @@
-@(articles: List[(String, String)])
+@(articles: List[(String, String)], beep: String)
 
 @main("Boro News") {
-    <h1>Boro News</h1>
     <ul>
         @for(a <- articles) {
-            <a href="@a._1"><li>@a._2</li></a>
+            <li><a href="@a._1" target="_blank">@a._2</a></li>
         }
     </ul>
-    <img src="@routes.Assets.versioned("images/mfc-logo.jpg")" />
 }

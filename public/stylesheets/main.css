@@ -1,0 +1,15 @@
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#sidebar {
+    float: left;
+    width: 220px;
+    text-align: center;
+}
+
+#content {
+    float: left;
+    border-left: 1px solid #ccc;
+}
+
