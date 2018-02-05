@@ -1,0 +1,325 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:mir="http://www.mirror.co.uk" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"> <channel> <title>gazettelive - Sport</title>
+<link>https://www.gazettelive.co.uk/</link>
+<atom:link href="https://www.gazettelive.co.uk/sport/?service=rss" rel="self" type="application/rss+xml"/> <description>RSS feed from Gazette Live</description>
+<language>en-gb</language>
+<copyright>Trinity Mirror 2013</copyright>
+<pubDate>Thu, 05 Oct 2017 10:58:23 GMT</pubDate>
+<category>Sport</category>
+<lastBuildDate>Thu, 05 Oct 2017 10:58:23 GMT</lastBuildDate>
+<!-- Not mobile -->
+<item>
+<title>History shows Middlesbrough the golden run they need to gatecrash the Championship play-offs</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/history-shows-middlesbrough-golden-run-14248487</link>
+<description><![CDATA[&#xa; Two bad results have dented Boro&#x27;s play-off prospects - but exactly how many points do they now need to succeed&#x3f;&#xa; ]]></description>
+<author>Anthony Vickers</author>
+<pubDate>Mon, 05 Feb 2018 16:56:37 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/history-shows-middlesbrough-golden-run-14248487</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Rugby League , Middlesbrough FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14225059.ece/ALTERNATES/s98/JS142293240.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14225059.ece/ALTERNATES/s615/JS142293240.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14225059.ece/ALTERNATES/s615/JS142293240.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14248487</mir:commentsID>
+</item>
+<item>
+<title>The FA process explained as Middlesbrough ponder next move in Rudy Gestede appeal</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/fa-process-explained-middlesbrough-ponder-14248374</link>
+<description><![CDATA[&#xa; Gestede faces a three-match ban after receiving a straight red card in the first half of Saturday&#x27;s game against Norwich at Carrow Road&#xa; ]]></description>
+<author>Dominic Shaw</author>
+<pubDate>Mon, 05 Feb 2018 16:24:12 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/fa-process-explained-middlesbrough-ponder-14248374</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC , Rudy Gestede ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14242774.ece/ALTERNATES/s98/JS142587619.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14242774.ece/ALTERNATES/s615/JS142587619.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14242774.ece/ALTERNATES/s615/JS142587619.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14248374</mir:commentsID>
+</item>
+<item>
+<title>Adam Clayton&#039;s encouragement, Middlesbrough&#039;s striker shortage &amp; Adama Traore reliance: 3 up, 3 down</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/adam-claytons-encouragement-middlesbroughs-striker-14247894</link>
+<description><![CDATA[&#xa; We look at the winners and losers of the weekend as Rudy Gestede&#x27;s ban looms &amp; Adam Forshaw joins a not-so-exclusive group&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Mon, 05 Feb 2018 13:23:42 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/adam-claytons-encouragement-middlesbroughs-striker-14247894</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Connor Ripley , Grant Leadbitter , Tony Pulis , Middlesbrough FC , Adama Traore , Adam Clayton ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14247212.ece/ALTERNATES/s98/Guedioura-Gestede-Clayton-Traore-Fletcher.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14247212.ece/ALTERNATES/s615/Guedioura-Gestede-Clayton-Traore-Fletcher.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14247212.ece/ALTERNATES/s615/Guedioura-Gestede-Clayton-Traore-Fletcher.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14247894</mir:commentsID>
+</item>
+<item>
+<title>Help Middlesbrough&#039;s Dani Ayala win PFA Player of the Month award by voting here</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/help-middlesbroughs-dani-ayala-win-14247452</link>
+<description><![CDATA[&#xa; Middlesbrough centre-back&#x27;s impressive displays see him shortlisted for January award&#xa; ]]></description>
+<author>Philip Tallentire</author>
+<pubDate>Mon, 05 Feb 2018 12:45:10 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/help-middlesbroughs-dani-ayala-win-14247452</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Daniel Ayala , Tony Pulis , Middlesbrough FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14247822.ece/ALTERNATES/s98/JS141347717.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14247822.ece/ALTERNATES/s615/JS141347717.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14247822.ece/ALTERNATES/s615/JS141347717.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14247452</mir:commentsID>
+</item>
+<item>
+<title>Why defend Gestede and why so meek with 10 men? 5 things from Norwich</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/defend-gestede-meek-10-men-14246261</link>
+<description><![CDATA[&#xa; The boss backing for red card Rudy, an air of resignation with a man down and praise for Boro fans in the aftermath&#xa; ]]></description>
+<author>Anthony Vickers</author>
+<pubDate>Mon, 05 Feb 2018 10:10:43 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/defend-gestede-meek-10-men-14246261</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Norwich City FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14242801.ece/ALTERNATES/s98/Sport.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14242801.ece/ALTERNATES/s615/Sport.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14242801.ece/ALTERNATES/s615/Sport.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14246261</mir:commentsID>
+</item>
+<item>
+<title>Ashley Fletcher retains Middlesbrough dream &amp; reveals Tony Pulis&#039; message to him before Sunderland move</title>
+<link>https://www.gazettelive.co.uk/sport/football/transfer-news/ashley-fletcher-retains-middlesbrough-dream-14246137</link>
+<description><![CDATA[&#xa; The 22-year-old made his debut for loan club Sunderland on Saturday but still hopes to prove a few people wrong on Teesside&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Mon, 05 Feb 2018 09:16:44 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/transfer-news/ashley-fletcher-retains-middlesbrough-dream-14246137</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Barclay's Premier League , Transfer deadline day , Sunderland AFC , Ashley Fletcher , Middlesbrough FC Transfer News ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14246207.ece/ALTERNATES/s98/AGP_MGA_12092017_Villa_Boro_55.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14246207.ece/ALTERNATES/s615/AGP_MGA_12092017_Villa_Boro_55.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14246207.ece/ALTERNATES/s615/AGP_MGA_12092017_Villa_Boro_55.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14246137</mir:commentsID>
+</item>
+<item>
+<title>Middlesbrough coaching role would have been &#039;very difficult&#039; for Curtis Fleming to turn down</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/middlesbrough-coaching-role-would-been-14246149</link>
+<description><![CDATA[&#xa; The 49-year-old made more than 300 appearances for Boro during his playing career &#x3a;&#x3a; He joins from QPR&#xa; ]]></description>
+<author>Dominic Shaw</author>
+<pubDate>Mon, 05 Feb 2018 09:03:23 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/middlesbrough-coaching-role-would-been-14246149</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Jonathan Woodgate , Tony Pulis , Middlesbrough FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14246141.ece/ALTERNATES/s98/JS130916627.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14246141.ece/ALTERNATES/s615/JS130916627.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14246141.ece/ALTERNATES/s615/JS130916627.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14246149</mir:commentsID>
+</item>
+<item>
+<title>Norwich&#039;s homework for Middlesbrough focused on one detail - stopping &#039;outstanding&#039; Adama Traore</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/norwichs-homework-middlesbrough-focused-one-14243856</link>
+<description><![CDATA[&#xa; Daniel Farke hailed Boro&#x27;s &#x27;outstanding&#x27; winger &amp; admitted much of his preparation centred on how to minimise the player&#x27;s impact&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Sun, 04 Feb 2018 12:00:00 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/norwichs-homework-middlesbrough-focused-one-14243856</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Norwich City FC , Adama Traore ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14243881.ece/ALTERNATES/s98/Sport.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14243881.ece/ALTERNATES/s615/Sport.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14243881.ece/ALTERNATES/s615/Sport.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14243856</mir:commentsID>
+</item>
+<item>
+<title>Boro vs Sunderland violence: Five appear in court linked to fan disorder at FA Cup derby</title>
+<link>https://www.gazettelive.co.uk/news/teesside-news/boro-vs-sunderland-violence-five-14243499</link>
+<description><![CDATA[There were a number of arrests after Boro&#x27;s 2-0 win early in January&nbsp;]]></description>
+<author>James Cain</author>
+<pubDate>Sun, 04 Feb 2018 10:03:20 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/news/teesside-news/boro-vs-sunderland-violence-five-14243499</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC , Riverside Stadium , Courts , Sunderland AFC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14224355.ece/ALTERNATES/s98/GV-of-Teesside-Magistrates-Court-Animal-Cruelty.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14224355.ece/ALTERNATES/s615/GV-of-Teesside-Magistrates-Court-Animal-Cruelty.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14224355.ece/ALTERNATES/s615/GV-of-Teesside-Magistrates-Court-Animal-Cruelty.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14243499</mir:commentsID>
+</item>
+<item>
+<title>Middlesbrough to appeal Rudy Gestede&#039;s Norwich red card - but risk further punishment for striker</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/middlesbrough-appeal-rudy-gestedes-norwich-14243687</link>
+<description><![CDATA[&#xa; The striker was sent off for a challenge on Norwich&#x27;s Grant Hanley&#x3a;&#x3a; Pundit Micky Gray doesn&#x27;t fancy Boro&#x27;s chances&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Sun, 04 Feb 2018 09:51:33 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/middlesbrough-appeal-rudy-gestedes-norwich-14243687</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Barclay's Premier League , Norwich City FC , Boro Live , Rudy Gestede ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14243699.ece/ALTERNATES/s98/Sport.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14243699.ece/ALTERNATES/s615/Sport.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14243699.ece/ALTERNATES/s615/Sport.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14243687</mir:commentsID>
+</item>
+<item>
+<title>Middlesbrough&#039;s tame second half showing, Pulis keeps us guessing &amp; opportunity knocks: What we learnt</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/middlesbroughs-tame-second-half-showing-14243088</link>
+<description><![CDATA[Dominic&#x27;s Shaw analysis of the 1-0 defeat at Norwich, a game which hinged on the sending off of Rudy Gestede in the first half]]></description>
+<author>Dominic Shaw</author>
+<pubDate>Sun, 04 Feb 2018 08:09:59 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/middlesbroughs-tame-second-half-showing-14243088</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14243625.ece/ALTERNATES/s98/JS142588314.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14243625.ece/ALTERNATES/s615/JS142588314.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14243625.ece/ALTERNATES/s615/JS142588314.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14243088</mir:commentsID>
+</item>
+<item>
+<title>The Anthony Vickers verdict on Middlesbrough stagnation and fast-fading optimism</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/anthony-vickers-verdict-middlesbrough-stagnation-14243164</link>
+<description><![CDATA[Anthony Vickers on what&#x27;s changed since the play-off final season - and what&#x27;s stayed the same]]></description>
+<author>Anthony Vickers</author>
+<pubDate>Sun, 04 Feb 2018 06:00:00 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/anthony-vickers-verdict-middlesbrough-stagnation-14243164</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14243174.ece/ALTERNATES/s98/JS142595958.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14243174.ece/ALTERNATES/s615/JS142595958.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14243174.ece/ALTERNATES/s615/JS142595958.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14243164</mir:commentsID>
+</item>
+<item>
+<title>Norwich&#039;s Daniel Farke explains why Middlesbrough must take heart from Fulham in Championship promotion race</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/norwichs-daniel-farke-explains-middlesbrough-14243030</link>
+<description><![CDATA[&#xa; The Norwich manager spoke about Boro&#x27;s transformation in style under Tony Pulis &amp; gave his verdict on Rudy Gestede&#x27;s red card&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Sat, 03 Feb 2018 18:51:46 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/norwichs-daniel-farke-explains-middlesbrough-14243030</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Fulham FC , Norwich City FC , Boro Live ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14243059.ece/ALTERNATES/s98/Brentford-v-Norwich-City-Sky-Bet-Championship.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14243059.ece/ALTERNATES/s615/Brentford-v-Norwich-City-Sky-Bet-Championship.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14243059.ece/ALTERNATES/s615/Brentford-v-Norwich-City-Sky-Bet-Championship.jpg" type=""
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14243030</mir:commentsID>
+</item>
+<item>
+<title>Only one Middlesbrough player emerges with any real credit in Norwich City defeat</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/only-one-middlesbrough-player-emerges-14242914</link>
+<description><![CDATA[Anthony Vickers rates the players after the disappointing 1-0 loss at Carrow Road]]></description>
+<author>Anthony Vickers</author>
+<pubDate>Sat, 03 Feb 2018 18:28:57 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/only-one-middlesbrough-player-emerges-14242914</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14243062.ece/ALTERNATES/s98/JS142587615.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14243062.ece/ALTERNATES/s615/JS142587615.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14243062.ece/ALTERNATES/s615/JS142587615.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14242914</mir:commentsID>
+</item>
+<item>
+<title>Tony Pulis bemoans game-changing decision &amp; Middlesbrough&#039;s missed chances - but doesn&#039;t blame Rudy Gestede</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/tony-pulis-bemoans-game-changing-14242934</link>
+<description><![CDATA[The striker was sent off less than half an hour into the game at Carrow Road &#x3a;&#x3a; Boro&#x27;s winning streak on the road came to an end]]></description>
+<author>Dominic Shaw</author>
+<pubDate>Sat, 03 Feb 2018 18:08:08 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/tony-pulis-bemoans-game-changing-14242934</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Rudy Gestede ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14242774.ece/ALTERNATES/s98/JS142587619.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14242774.ece/ALTERNATES/s615/JS142587619.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14242774.ece/ALTERNATES/s615/JS142587619.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14242934</mir:commentsID>
+</item>
+<item>
+<title>Norwich 1-0 Middlesbrough: Rudy Gestede&#039;s madness caps off a week of missed opportunities</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/norwich-1-0-middlesbrough-rudy-14242738</link>
+<description><![CDATA[&#xa; Tony Pulis&#x27; side slipped to another self-inflicted defeat as the promotion race took another cruel twist&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Sat, 03 Feb 2018 17:23:23 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/norwich-1-0-middlesbrough-rudy-14242738</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Tony Pulis , Middlesbrough FC , Norwich City FC ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article14242817.ece/ALTERNATES/s98/Sport.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article14242817.ece/ALTERNATES/s615/Sport.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article14242817.ece/ALTERNATES/s615/Sport.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14242738</mir:commentsID>
+</item>
+<item>
+<title>What Middlesbrough can expect from Norwich City &amp; the midfielder who&#039;ll have to be shackled</title>
+<link>https://www.gazettelive.co.uk/sport/football/football-news/what-middlesbrough-can-expect-norwich-14235240</link>
+<description><![CDATA[Ahead of this afternoon&#x27;s game at Carrow Road, we get the lowdown on Boro&#x27;s opponents from a Canaries expert]]></description>
+<author>Philip Tallentire</author>
+<pubDate>Sat, 03 Feb 2018 07:00:00 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/football-news/what-middlesbrough-can-expect-norwich-14235240</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC , Norwich City FC , Tony Pulis ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article13683202.ece/ALTERNATES/s98/KLP_MGA_260917mgaBoro_03JPG.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article13683202.ece/ALTERNATES/s615/KLP_MGA_260917mgaBoro_03JPG.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article13683202.ece/ALTERNATES/s615/KLP_MGA_260917mgaBoro_03JPG.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14235240</mir:commentsID>
+</item>
+<item>
+<title>Middlesbrough must show Martin Braithwaite what he&#039;s missing - by getting promoted</title>
+<link>https://www.gazettelive.co.uk/sport/football/transfer-news/middlesbrough-must-show-martin-braithwaite-14240124</link>
+<description><![CDATA[&#xa; The attacker&#x27;s reward had he remained at Boro could have been two-fold in the summer, writes Jonathon Taylor&#xa; ]]></description>
+<author>Jonathon Taylor</author>
+<pubDate>Sat, 03 Feb 2018 06:00:00 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/transfer-news/middlesbrough-must-show-martin-braithwaite-14240124</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[George Friend , Viktor Fischer , Tony Pulis , Middlesbrough FC , Barclay's Premier League , Martin Braithwaite , Middlesbrough FC Transfer News ]]></media:keywords>
+<media:thumbnail url="https://i2-prod.gazettelive.co.uk/incoming/article13840798.ece/ALTERNATES/s98/JS135121806.jpg" width="96"
+height="98"/>
+<enclosure url="https://i2-prod.gazettelive.co.uk/incoming/article13840798.ece/ALTERNATES/s615/JS135121806.jpg" />
+<media:content url="https://i2-prod.gazettelive.co.uk/incoming/article13840798.ece/ALTERNATES/s615/JS135121806.jpg" type="image/jpeg"
+width="615" height="409" />
+<mir:hascomments>false</mir:hascomments>
+<mir:commentsID>gazettelive-14240124</mir:commentsID>
+</item>
+<item>
+<title>Dean Whitehead on how he sold Middlesbrough to Martin Cranie and what fans should expect</title>
+<link>https://www.gazettelive.co.uk/sport/football/transfer-news/dean-whitehead-how-sold-middlesbrough-14239647</link>
+<description><![CDATA[&#x27;I can&rsquo;t speak highly enough of the club and the area&#x27;, says Whitehead &#x3a;&#x3a; He says Cranie is a &#x27;very reliable player&#x27;]]></description>
+<author>Dominic Shaw</author>
+<pubDate>Fri, 02 Feb 2018 19:00:00 GMT</pubDate>
+<guid>https://www.gazettelive.co.uk/sport/football/transfer-news/dean-whitehead-how-sold-middlesbrough-14239647</guid>
+<category>Sport</category>
+<media:keywords><![CDATA[Middlesbrough FC Transfer News , Middlesbrough FC , Dean Whitehead ]]></media:keywords>
+<media:thumb
