@@ -53,7 +53,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 //    val docSky = skyBrowser.parseString(skySportsResponse)
 //
 //    val beep = skySportsResponse
-    
+
     Ok(views.html.index(articles, ""))
 
   }
@@ -78,7 +78,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
       .max.toString // partition here for last filename?
 
     val latestFileTime: LocalDateTime = LocalDateTime.parse(latestFileName, DateTimeFormatter.ofPattern("yyyyMMddHHmm"))
-    LocalDateTime.now().isAfter(latestFileTime.plusMinutes(1))
+    LocalDateTime.now().isAfter(latestFileTime.plusHours(1))
   }
 
   def fetchAndStoreLatestArticles(site: String, url: String): Unit = {
