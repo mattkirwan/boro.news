@@ -1,5 +1,8 @@
 package controllers
 
+import java.nio.file.{Paths, Files}
+import java.nio.charset.StandardCharsets
+
 import java.io.{File, PrintWriter}
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
@@ -26,90 +29,92 @@ import scala.util.matching.Regex.Match
 @Singleton
 class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
-
-
-  def fetchLatestGazetteArticles(): String = {
-    scala.io.Source.fromURL("https://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss").mkString
-  }
-
-  def storeResponse(resp: String) = {
-    val gazetteArticlesFileName: String = new SimpleDateFormat("'./data/gazette/'yyyyMMddHHmm'.txt'").format(new Date())
-    val writer = new PrintWriter(new File(gazetteArticlesFileName))
-    writer.write(resp)
-  }
-
-  def fetchNewArticle(d: LocalDateTime): Boolean = {
-    if (LocalDateTime.now().isAfter(d.plusHours(2))) {
-      return true
-    }
-    false
-  }
-
   def index() = Action { implicit request: Request[AnyContent] =>
 
-    val gazetteFiles: Array[File] = new File("./data/gazette").listFiles()
+    val files: Array[File] = new File("./data/gazette").listFiles()
 
-    if (gazetteFiles.isEmpty) {
-      println("There are no files...updating")
-      // Need to sort something out for this async call because getting latestFileName will obviously fail
-      storeResponse(fetchLatestGazetteArticles())
+    if (files.isEmpty || checkLatestFile("gazette")) {
+      fetchAndStoreLatestArticles("gazette")
     }
 
-    val latestFileName = gazetteFiles
-      .map(f => "[0-9]+".r findFirstIn f.toString )
-      .map(f => {f.get.toLong})
-      .max.toString
+    val filePath = getLatestFilename("gazette")
 
-    val latestFileTime: LocalDateTime = LocalDateTime.parse(latestFileName, DateTimeFormatter.ofPattern("yyyyMMddHHmm"))
-
-    val update: Boolean = LocalDateTime.now().isAfter(latestFileTime.plusMinutes(30))
-
-    if (update) {
-      println("Updating latest gazette articles...")
-      storeResponse(fetchLatestGazetteArticles())
-    }
-
-    def parseXML(xml: String): Try[scala.xml.Elem] = {
-      Try(scala.xml.XML.loadString(xml))
-    }
-
-    val gazetteArticles = parseXML(latestFileName) match {
+    val gazetteArticles = parseXML(filePath) match {
       case Success(out) => for {
         a <- out \\ "item"
         t <- a \ "title"
         l <- a \ "link"
-      } yield (l.text -> t.text)
-      case Failure(f) => List(("error" -> f.toString))
+      } yield l.text -> t.text
+      case Failure(f) => List( "error" -> f.toString )
     }
 
-    // Northern Echo
-    val URL_ECHO = "http://www.thenorthernecho.co.uk"
-    val echoResponse: String = scala.io.Source.fromURL(URL_ECHO + "/sport/football/middlesbrough/").mkString
+    
+//    // Northern Echo
+//    val URL_ECHO = "http://www.thenorthernecho.co.uk"
+//    val echoResponse: String = scala.io.Source.fromURL(URL_ECHO + "/sport/football/middlesbrough/").mkString
+//
+//
+//
+//    val browser = new JsoupBrowser()
+//    val doc = browser.parseString(echoResponse)
+//
+//    val echoArticleElems = doc >?> elementList(".nq-article-card-content a")
+//
+//    val echoArticles: List[(String, String)] = echoArticleElems.get
+//      .map( a => ( URL_ECHO + a.attr("href"), a.text.replaceAll(".+\\: ","") ) )
+//      .filter(_._1.matches("^((?!\\#comments-anchor).)*"))
+//
+//    val articles = echoArticles ::: gazetteArticles.toList
+//
+//    // Sky Sports Videos
+//    val skySportsResponse: String = scala.io.Source.fromURL("http://www.skysports.com/middlesbrough-videos").mkString
+//
+//    val skyBrowser = new JsoupBrowser()
+//    val docSky = skyBrowser.parseString(skySportsResponse)
+//
+//    val beep = skySportsResponse
 
 
+    Ok(views.html.index(gazetteArticles.toList, ""))
 
-    val browser = new JsoupBrowser()
-    val doc = browser.parseString(echoResponse)
+  }
 
-    val echoArticleElems = doc >?> elementList(".nq-article-card-content a")
+  def fetchURLResponse(url: String): String = {
+    scala.io.Source.fromURL(url).mkString
+  }
 
-    val echoArticles: List[(String, String)] = echoArticleElems.get
-      .map( a => ( URL_ECHO + a.attr("href"), a.text.replaceAll(".+\\: ","") ) )
-      .filter(_._1.matches("^((?!\\#comments-anchor).)*"))
+  def writeArticlesToFile(path: String, txt: String): Unit = {
+    Files.write(Paths.get(path), txt.getBytes(StandardCharsets.UTF_8))
+  }
 
-    val articles = echoArticles ::: gazetteArticles.toList
+  def generateNewFilename(site: String): String = {
+    new SimpleDateFormat("'./data/"+site+"/'yyyyMMddHHmm'.xml'").format(new Date())
+  }
 
-    // Sky Sports Videos
-    val skySportsResponse: String = scala.io.Source.fromURL("http://www.skysports.com/middlesbrough-videos").mkString
+  def checkLatestFile(site: String): Boolean = {
+    val latestFiles = new File("./data/" + site).listFiles()
+    val latestFileName = latestFiles
+      .map(f => "[0-9]+".r findFirstIn f.toString )
+      .map(f => {f.get.toLong})
+      .max.toString // partition here for last filename?
 
-    val skyBrowser = new JsoupBrowser()
-    val docSky = skyBrowser.parseString(skySportsResponse)
+    val latestFileTime: LocalDateTime = LocalDateTime.parse(latestFileName, DateTimeFormatter.ofPattern("yyyyMMddHHmm"))
+    LocalDateTime.now().isAfter(latestFileTime.plusMinutes(1))
+  }
 
-    val beep = skySportsResponse
+  def fetchAndStoreLatestArticles(site: String): Unit = {
+    println("Fetching and storing the latest "+site+" articles...")
+    val articles = fetchURLResponse("https://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss")
+    val filename = generateNewFilename(site)
+    writeArticlesToFile(filename, articles)
+  }
 
+  def parseXML(filePath: String): Try[scala.xml.Elem] = {
+    Try(scala.xml.XML.loadFile(filePath))
+  }
 
-    Ok(views.html.index(articles, ""))
-
+  def getLatestFilename(site: String): String = {
+    new File("./data/" + site).listFiles().last.toString
   }
 
 }
