@@ -3,69 +3,49 @@ package controllers
 import java.nio.file.{Paths, Files}
 import java.nio.charset.StandardCharsets
 
-import java.io.{File, PrintWriter}
+import java.io.File
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.Date
 import javax.inject._
 
-import play.api._
 import play.api.mvc._
 
 import scala.util.{Failure, Success, Try}
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
-import net.ruippeixotog.scalascraper.dsl.DSL.Parse._
-import net.ruippeixotog.scalascraper.model._
 
-import scala.util.matching.Regex.Match
 
-/**
- * This controller creates an `Action` to handle HTTP requests to the
- * application's home page.
- */
 @Singleton
 class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   def index() = Action { implicit request: Request[AnyContent] =>
 
-    val files: Array[File] = new File("./data/gazette").listFiles()
+    // Gazette Articles
+    val gazetteFiles: Array[File] = new File("./data/gazette").listFiles()
 
-    if (files.isEmpty || checkLatestFile("gazette")) {
-      fetchAndStoreLatestArticles("gazette")
+    if (gazetteFiles.isEmpty || checkLatestFile("gazette")) {
+      fetchAndStoreLatestArticles("gazette", "https://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss")
     }
 
-    val filePath = getLatestFilename("gazette")
+    val gazetteFilePath = getLatestFilename("gazette")
+    val gazetteArticles = parseGazetteXml(gazetteFilePath)
 
-    val gazetteArticles = parseXML(filePath) match {
-      case Success(out) => for {
-        a <- out \\ "item"
-        t <- a \ "title"
-        l <- a \ "link"
-      } yield l.text -> t.text
-      case Failure(f) => List( "error" -> f.toString )
+
+    // Northern Echo Articles
+    val echoFiles: Array[File] = new File("./data/echo").listFiles()
+
+    if (echoFiles.isEmpty || checkLatestFile("echo")) {
+      fetchAndStoreLatestArticles("echo", "http://www.thenorthernecho.co.uk/sport/football/middlesbrough/")
     }
 
-    
-//    // Northern Echo
-//    val URL_ECHO = "http://www.thenorthernecho.co.uk"
-//    val echoResponse: String = scala.io.Source.fromURL(URL_ECHO + "/sport/football/middlesbrough/").mkString
-//
-//
-//
-//    val browser = new JsoupBrowser()
-//    val doc = browser.parseString(echoResponse)
-//
-//    val echoArticleElems = doc >?> elementList(".nq-article-card-content a")
-//
-//    val echoArticles: List[(String, String)] = echoArticleElems.get
-//      .map( a => ( URL_ECHO + a.attr("href"), a.text.replaceAll(".+\\: ","") ) )
-//      .filter(_._1.matches("^((?!\\#comments-anchor).)*"))
-//
-//    val articles = echoArticles ::: gazetteArticles.toList
-//
+    val echoFilePath = getLatestFilename("echo")
+    val echoArticles = parseEchoHtml(echoFilePath)
+
+    val articles = echoArticles ::: gazetteArticles
+
 //    // Sky Sports Videos
 //    val skySportsResponse: String = scala.io.Source.fromURL("http://www.skysports.com/middlesbrough-videos").mkString
 //
@@ -73,9 +53,8 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 //    val docSky = skyBrowser.parseString(skySportsResponse)
 //
 //    val beep = skySportsResponse
-
-
-    Ok(views.html.index(gazetteArticles.toList, ""))
+    
+    Ok(views.html.index(articles, ""))
 
   }
 
@@ -102,19 +81,40 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     LocalDateTime.now().isAfter(latestFileTime.plusMinutes(1))
   }
 
-  def fetchAndStoreLatestArticles(site: String): Unit = {
+  def fetchAndStoreLatestArticles(site: String, url: String): Unit = {
     println("Fetching and storing the latest "+site+" articles...")
-    val articles = fetchURLResponse("https://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss")
+    val articles = fetchURLResponse(url)
     val filename = generateNewFilename(site)
     writeArticlesToFile(filename, articles)
   }
 
-  def parseXML(filePath: String): Try[scala.xml.Elem] = {
-    Try(scala.xml.XML.loadFile(filePath))
-  }
-
   def getLatestFilename(site: String): String = {
     new File("./data/" + site).listFiles().last.toString
+  }
+
+  def parseGazetteXml(filePath: String): List[(String, String)] = {
+    val gazetteArticles = Try(scala.xml.XML.loadFile(filePath)) match {
+      case Success(out) => for {
+        a <- out \\ "item"
+        t <- a \ "title"
+        l <- a \ "link"
+      } yield l.text -> t.text
+      case Failure(f) => Seq( "error" -> f.toString )
+    }
+    gazetteArticles.toList
+  }
+
+  def parseEchoHtml(filePath: String): List[(String, String)] = {
+
+    val browser = new JsoupBrowser()
+    val doc = browser.parseString(scala.io.Source.fromFile(filePath, "UTF-8").getLines.mkString)
+
+    val echoArticleElems = doc >?> elementList(".nq-article-card-content a")
+
+    echoArticleElems.get
+      .map( a => ( "http://www.thenorthernecho.co.uk" + a.attr("href"), a.text.replaceAll(".+\\: ","") ) )
+      .filter(_._1.matches("^((?!\\#comments-anchor).)*"))
+
   }
 
 }
