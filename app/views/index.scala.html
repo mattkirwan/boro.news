@@ -2,9 +2,9 @@
 
 @main("Boro News") {
     @beep
-    <ul>
+        <ul>
         @for(a <- articles) {
             <li><a href="@a._1" target="_blank">@a._2</a></li>
         }
-    </ul>
+        </ul>
 }
