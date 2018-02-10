@@ -1,7 +1,7 @@
 name := """boro-news"""
 organization := "com.boronews"
 
-version := "1.0-SNAPSHOT"
+version := "1.3-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
@@ -13,9 +13,3 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.6"
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 libraryDependencies += "net.ruippeixotog" %% "scala-scraper" % "2.1.0"
-
-// Adds additional packages into Twirl
-//TwirlKeys.templateImports += "com.boronews.controllers._"
-
-// Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "com.boronews.binders._"

@@ -24,7 +24,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   def index() = Action { implicit request: Request[AnyContent] =>
 
     // Gazette Articles
-    val gazetteFiles: Array[File] = new File("./data/gazette").listFiles()
+    val gazetteFiles: Array[File] = new File("/opt/boro.news/data/gazette").listFiles()
 
     if (gazetteFiles.isEmpty || checkLatestFile("gazette")) {
       fetchAndStoreLatestArticles("gazette", "https://www.gazettelive.co.uk/all-about/middlesbrough-fc?service=rss")
@@ -35,7 +35,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
 
     // Northern Echo Articles
-    val echoFiles: Array[File] = new File("./data/echo").listFiles()
+    val echoFiles: Array[File] = new File("/opt/boro.news/data/echo").listFiles()
 
     if (echoFiles.isEmpty || checkLatestFile("echo")) {
       fetchAndStoreLatestArticles("echo", "http://www.thenorthernecho.co.uk/sport/football/middlesbrough/")
@@ -67,7 +67,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
 
   def generateNewFilename(site: String): String = {
-    new SimpleDateFormat("'./data/"+site+"/'yyyyMMddHHmm'.xml'").format(new Date())
+    new SimpleDateFormat("'/opt/boro.news/data/"+site+"/'yyyyMMddHHmm'.xml'").format(new Date())
   }
 
   def checkLatestFile(site: String): Boolean = {
@@ -89,7 +89,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
 
   def getLatestFilename(site: String): String = {
-    new File("./data/" + site).listFiles().last.toString
+    new File("/opt/boro.news/data/" + site).listFiles().last.toString
   }
 
   def parseGazetteXml(filePath: String): List[(String, String)] = {
